@@ -1,0 +1,92 @@
+/Users/kavya/Downloads/Projectv2/hospital_backend.py:25: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base = declarative_base()
+INFO:     Started server process [16809]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:56713 - "POST /register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56728 - "POST /register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56730 - "POST /register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56732 - "POST /register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56734 - "POST /register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56746 - "POST /login HTTP/1.1" 200 OK
+/Users/kavya/Downloads/Projectv2/hospital_backend.py:379: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.12/migration/
+  new_patient = Patient(**patient.dict())
+INFO:     127.0.0.1:56748 - "POST /patients HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56750 - "POST /patients HTTP/1.1" 200 OK
+/Users/kavya/Downloads/Projectv2/hospital_backend.py:393: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.12/migration/
+  new_task = Task(**task.dict(), assigned_by=current_user.id)
+INFO:     127.0.0.1:56752 - "POST /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56754 - "POST /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56762 - "POST /login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56765 - "POST /staff/update-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56767 - "POST /login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56769 - "POST /staff/update-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56771 - "POST /login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56773 - "POST /staff/update-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56800 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56804 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56806 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56808 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56810 - "POST /login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56812 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56814 - "GET /staff/presence HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56816 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56818 - "GET /staff/presence HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56820 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56822 - "GET /staff/presence HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56824 - "GET /patients HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56826 - "GET /audit-logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56837 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56839 - "GET /staff/presence HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56841 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56843 - "GET /staff/presence HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56845 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56847 - "GET /staff/presence HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56849 - "GET /patients HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56851 - "GET /audit-logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56853 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56855 - "POST /staff/update-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56857 - "GET /staff/presence HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56859 - "GET /alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56861 - "GET /staff/presence HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56863 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56865 - "GET /staff/presence HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56867 - "GET /patients HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56869 - "GET /audit-logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56874 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56876 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56882 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56884 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56887 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56889 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56891 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56893 - "POST /login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56895 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56897 - "GET /patients HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56899 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58389 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58391 - "GET /patients HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58393 - "GET /patients/1/medications HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58395 - "GET /patients/1/vitals HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58397 - "GET /patients/1/care-plan HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58401 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58403 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58405 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58407 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58409 - "POST /staff/update-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58412 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58414 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58416 - "POST /staff/update-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58419 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58421 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58423 - "POST /staff/update-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58497 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58500 - "GET /patients HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58502 - "GET /patients/1/medications HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58504 - "GET /patients/1/vitals HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58506 - "GET /patients/1/care-plan HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58510 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58512 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58514 - "POST /staff/update-status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58518 - "GET / HTTP/1.1" 404 Not Found
